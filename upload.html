@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTHELP - Upload</title>
+    <link rel="stylesheet" href="styling_upload.css"> <!-- You can create a separate CSS file for styling this page -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>  
+                <img src="actual.png" alt="TESTHELP Logo"> 
+                <nav>
+                    <div class="container">
+                        <ul>
+                            <li><a href="homepg.html">HOME</a></li> <!-- Link back to homepage -->
+                            <li><a href="upload.html">UPLOAD </a></li>
+                            <li><a href="#">TAKE MOCK TEST</a></li>
+                            <li><a href="#">TEST ANALYSIS</a></li>
+                            <li><a href="#">TEST REVIEW</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </h1>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <div class="container">
+                <h2>Upload Question Papers</h2>
+                <form id="uploadForm" action="upload.php" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="file">Choose a file:</label>
+                        <input type="file" id="file" name="file" accept=".pdf">
+                    </div>
+                    <button type="button" onclick="processPDF()">Upload</button> <!-- Call JavaScript function on button click -->
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TESTHELP. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
